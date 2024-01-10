@@ -3,11 +3,11 @@ Feature: Copilot search function for bing.com
 Scenario: General search with Copilot on bing.com
 Given a web browser is at the bing.com home page
 And the user clicked on Copilot icon
-When the user enters "moduł monitoringu mediów w Prowly" in "Zadaj mi pytanie..."
+When the user enters "moduł monitoringu mediów w Prowly" in "Ask me anything"
 Then the reply regarding “moduł monitoringu mediów w Prowly” is generated
 
 Scenario: Search with Copilot on bing.com using microphone
-Given Given a web browser is at the bing.com home page
+Given a web browser is at the bing.com home page
 And the user clicked on Copilot icon
 And the user has an active microphone device
 When the user speaks “moduł monitoringu mediów w Prowly” via "use microphone" option

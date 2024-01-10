@@ -6,7 +6,6 @@ When the user enters “Prowly Media Monitoring” into the search bar
 Then links related to “Prowly Media Monitoring” are shown on the results page
 
 Scenario: “Search for videos” using bing.com
-Given the user used a search all via bing.com home page
-And links related to “Prowly Media Monitoring” are shown on the results page
+Given the user used a search all for "Prowly monitoring module" via bing.com home page
 When the user clicks on the “Video” link at the top of the results page
 Then videos related to “Prowly Media Monitoring” are shown on the results page
