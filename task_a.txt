@@ -1,0 +1,12 @@
+Feature: Search function for bing.com
+
+Scenario: “Search all” using bing.com
+Given a web browser is at the bing.com home page
+When the user enters “Prowly Media Monitoring” into the search bar
+Then links related to “Prowly Media Monitoring” are shown on the results page
+
+Scenario: “Search for videos” using bing.com
+Given the user used a search all via bing.com home page
+And links related to “Prowly Media Monitoring” are shown on the results page
+When the user clicks on the “Video” link at the top of the results page
+Then videos related to “Prowly Media Monitoring” are shown on the results page
